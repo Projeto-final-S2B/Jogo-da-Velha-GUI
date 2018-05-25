@@ -36,16 +36,24 @@ public class Jogo {
 					if (soma == 12) {
 						return true;
 					}
+
 				}
 			}
+			soma = 0;
 		}
 
 		// diagonal
-		if (matrizGame[0][0] + matrizGame[1][1] + matrizGame[2][2] == 12)
+		if (matrizGame[0][0] + matrizGame[1][1] + matrizGame[2][2] == 12) {
+			System.out.println("Verifica diagonal  true");
 			return true;
-		if (matrizGame[0][2] + matrizGame[1][1] + matrizGame[2][0] == 12)
+		}
+
+		if (matrizGame[0][2] + matrizGame[1][1] + matrizGame[2][0] == 12) {
+			System.out.println("Verifica diagonal  true");
 			return true;
-		
+		}
+
+		soma = 0;
 		return false;
 	}
 
@@ -77,6 +85,7 @@ public class Jogo {
 					}
 				}
 			}
+			soma = 0;
 		}
 
 		// diagonal
@@ -84,13 +93,13 @@ public class Jogo {
 			return true;
 		if (matrizGame[0][2] + matrizGame[1][1] + matrizGame[2][0] == 3)
 			return true;
-
+		soma = 0;
 		return false;
 	}
 
 	public Jogo() {
 		inicializaJogo();
-		exibeMatrizConsole();
+		// exibeMatrizConsole();
 	}
 
 	public void inicializaJogo() {
