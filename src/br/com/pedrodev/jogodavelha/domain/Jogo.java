@@ -4,7 +4,7 @@ package br.com.pedrodev.jogodavelha.domain;
 public class Jogo {
 
 	private int[][] matrizGame = new int[3][3];
-	private int numeroJogadas;
+	private int numeroJogadas = 0;
 
 	private static final int XWIN = 12; // Marcar jogada x com 4
 	private static final int OWIN = 3; // Marcar jogada 0 com 1
@@ -126,10 +126,12 @@ public class Jogo {
 	public void xJoga(int linha, int coluna) {
 
 		matrizGame[linha][coluna] = 4;
+		numeroJogadas++;
 	}
 
 	public void oJoga(int linha, int coluna) {
 		matrizGame[linha][coluna] = 1;
+		numeroJogadas++;
 	}
 
 	public int getNumeroJogadas() {

@@ -17,7 +17,6 @@ public class ControllerTelaJogo implements ActionListener {
 	private static final String X_MOVE = "X";
 	private static final String O_MOVE = "O";
 	private String nextMove;
-	private int qtdMove = 0;
 
 	public ControllerTelaJogo(TelaJogo tela) {
 
@@ -126,12 +125,7 @@ public class ControllerTelaJogo implements ActionListener {
 				tela.getBtn00().setText("X");
 				disableButton(tela.getBtn00());
 				tela.getTxtStatus().setText("Next Move : " + O_MOVE);
-				if (jogo.XWin()) { // x ganhou
-					tela.getTxtStatus().setText("X WIN");
-					disableAllButtons();
-				}
 
-				qtdMove++;
 				nextMove = O_MOVE;
 			} else { // o joga
 				jogo.oJoga(0, 0);
@@ -139,12 +133,7 @@ public class ControllerTelaJogo implements ActionListener {
 				tela.getBtn00().setText("O");
 				disableButton(tela.getBtn00());
 				tela.getTxtStatus().setText("Next Move : " + X_MOVE);
-				if (jogo.OWin()) { // x ganhou
-					tela.getTxtStatus().setText("O WIN");
-					disableAllButtons();
-				}
 
-				qtdMove++;
 				nextMove = X_MOVE;
 			}
 
@@ -158,12 +147,7 @@ public class ControllerTelaJogo implements ActionListener {
 				tela.getBtn01().setText("X");
 				disableButton(tela.getBtn01());
 				tela.getTxtStatus().setText("Next Move : " + O_MOVE);
-				if (jogo.XWin()) { // x ganhou
-					tela.getTxtStatus().setText("X WIN");
-					disableAllButtons();
-				}
 
-				qtdMove++;
 				nextMove = O_MOVE;
 			} else { // o joga
 				jogo.oJoga(0, 1);
@@ -171,12 +155,7 @@ public class ControllerTelaJogo implements ActionListener {
 				tela.getBtn01().setText("O");
 				disableButton(tela.getBtn01());
 				tela.getTxtStatus().setText("Next Move : " + X_MOVE);
-				if (jogo.OWin()) { // x ganhou
-					tela.getTxtStatus().setText("O WIN");
-					disableAllButtons();
-				}
 
-				qtdMove++;
 				nextMove = X_MOVE;
 			}
 		} // END IF
@@ -189,12 +168,7 @@ public class ControllerTelaJogo implements ActionListener {
 				tela.getBtn02().setText("X");
 				disableButton(tela.getBtn02());
 				tela.getTxtStatus().setText("Next Move : " + O_MOVE);
-				if (jogo.XWin()) { // x ganhou
-					tela.getTxtStatus().setText("X WIN");
-					disableAllButtons();
-				}
 
-				qtdMove++;
 				nextMove = O_MOVE;
 			} else { // o joga
 				jogo.oJoga(0, 2);
@@ -202,12 +176,7 @@ public class ControllerTelaJogo implements ActionListener {
 				tela.getBtn02().setText("O");
 				disableButton(tela.getBtn02());
 				tela.getTxtStatus().setText("Next Move : " + X_MOVE);
-				if (jogo.OWin()) { // x ganhou
-					tela.getTxtStatus().setText("O WIN");
-					disableAllButtons();
-				}
 
-				qtdMove++;
 				nextMove = X_MOVE;
 			}
 		} // END IF
@@ -220,12 +189,7 @@ public class ControllerTelaJogo implements ActionListener {
 				tela.getBtn10().setText("X");
 				disableButton(tela.getBtn10());
 				tela.getTxtStatus().setText("Next Move : " + O_MOVE);
-				if (jogo.XWin()) { // x ganhou
-					tela.getTxtStatus().setText("X WIN");
-					disableAllButtons();
-				}
 
-				qtdMove++;
 				nextMove = O_MOVE;
 			} else { // o joga
 				jogo.oJoga(1, 0);
@@ -233,12 +197,7 @@ public class ControllerTelaJogo implements ActionListener {
 				tela.getBtn10().setText("O");
 				disableButton(tela.getBtn10());
 				tela.getTxtStatus().setText("Next Move : " + X_MOVE);
-				if (jogo.OWin()) { // x ganhou
-					tela.getTxtStatus().setText("O WIN");
-					disableAllButtons();
-				}
 
-				qtdMove++;
 				nextMove = X_MOVE;
 			}
 		} // END IF
@@ -252,12 +211,6 @@ public class ControllerTelaJogo implements ActionListener {
 				disableButton(tela.getBtn11());
 				tela.getTxtStatus().setText("Next Move : " + O_MOVE);
 
-				if (jogo.XWin()) { // x ganhou
-					tela.getTxtStatus().setText("X WIN");
-					disableAllButtons();
-				}
-
-				qtdMove++;
 				nextMove = O_MOVE;
 			} else { // o joga
 				jogo.oJoga(1, 1);
@@ -265,12 +218,7 @@ public class ControllerTelaJogo implements ActionListener {
 				tela.getBtn11().setText("O");
 				disableButton(tela.getBtn11());
 				tela.getTxtStatus().setText("Next Move : " + X_MOVE);
-				if (jogo.OWin()) { // x ganhou
-					tela.getTxtStatus().setText("O WIN");
-					disableAllButtons();
-				}
 
-				qtdMove++;
 				nextMove = X_MOVE;
 			}
 		} // END IF
@@ -283,12 +231,7 @@ public class ControllerTelaJogo implements ActionListener {
 				tela.getBtn12().setText("X");
 				disableButton(tela.getBtn12());
 				tela.getTxtStatus().setText("Next Move : " + O_MOVE);
-				if (jogo.XWin()) { // x ganhou
-					tela.getTxtStatus().setText("X WIN");
-					disableAllButtons();
-				}
 
-				qtdMove++;
 				nextMove = O_MOVE;
 			} else { // o joga
 				jogo.oJoga(1, 2);
@@ -296,12 +239,7 @@ public class ControllerTelaJogo implements ActionListener {
 				tela.getBtn12().setText("O");
 				disableButton(tela.getBtn12());
 				tela.getTxtStatus().setText("Next Move : " + X_MOVE);
-				if (jogo.OWin()) { // x ganhou
-					tela.getTxtStatus().setText("O WIN");
-					disableAllButtons();
-				}
 
-				qtdMove++;
 				nextMove = X_MOVE;
 			}
 		} // END IF
@@ -314,12 +252,7 @@ public class ControllerTelaJogo implements ActionListener {
 				tela.getBtn20().setText("X");
 				disableButton(tela.getBtn20());
 				tela.getTxtStatus().setText("Next Move : " + O_MOVE);
-				if (jogo.XWin()) { // x ganhou
-					tela.getTxtStatus().setText("X WIN");
-					disableAllButtons();
-				}
 
-				qtdMove++;
 				nextMove = O_MOVE;
 			} else { // o joga
 				jogo.oJoga(2, 0);
@@ -327,12 +260,7 @@ public class ControllerTelaJogo implements ActionListener {
 				tela.getBtn20().setText("O");
 				disableButton(tela.getBtn20());
 				tela.getTxtStatus().setText("Next Move : " + X_MOVE);
-				if (jogo.OWin()) { // x ganhou
-					tela.getTxtStatus().setText("O WIN");
-					disableAllButtons();
-				}
 
-				qtdMove++;
 				nextMove = X_MOVE;
 			}
 		} // END IF
@@ -345,12 +273,7 @@ public class ControllerTelaJogo implements ActionListener {
 				tela.getBtn21().setText("X");
 				disableButton(tela.getBtn21());
 				tela.getTxtStatus().setText("Next Move : " + O_MOVE);
-				if (jogo.XWin()) { // x ganhou
-					tela.getTxtStatus().setText("X WIN");
-					disableAllButtons();
-				}
 
-				qtdMove++;
 				nextMove = O_MOVE;
 			} else { // o joga
 				jogo.oJoga(2, 1);
@@ -358,12 +281,7 @@ public class ControllerTelaJogo implements ActionListener {
 				tela.getBtn21().setText("O");
 				disableButton(tela.getBtn21());
 				tela.getTxtStatus().setText("Next Move : " + X_MOVE);
-				if (jogo.OWin()) { // x ganhou
-					tela.getTxtStatus().setText("O WIN");
-					disableAllButtons();
-				}
 
-				qtdMove++;
 				nextMove = X_MOVE;
 			}
 		} // END IF
@@ -376,29 +294,32 @@ public class ControllerTelaJogo implements ActionListener {
 				tela.getBtn22().setText("X");
 				disableButton(tela.getBtn22());
 				tela.getTxtStatus().setText("Next Move : " + O_MOVE);
-				if (jogo.XWin()) { // x ganhou
-					tela.getTxtStatus().setText("X WIN");
-					disableAllButtons();
-				}
 
-				qtdMove++;
 				nextMove = O_MOVE;
+
 			} else { // o joga
 				jogo.oJoga(2, 2);
 				jogo.exibeMatrizConsole();
 				tela.getBtn22().setText("O");
 				disableButton(tela.getBtn22());
 				tela.getTxtStatus().setText("Next Move : " + X_MOVE);
-				if (jogo.OWin()) { // x ganhou
-					tela.getTxtStatus().setText("O WIN");
-					disableAllButtons();
-				}
 
-				qtdMove++;
 				nextMove = X_MOVE;
 			}
 		} // END IF
 
+		if (jogo.XWin()) {
+			tela.getTxtStatus().setText("X WIN");
+			disableAllButtons();
+		} else if (jogo.OWin()) {
+			tela.getTxtStatus().setText("O WIN");
+			disableAllButtons();
+		} else {
+			if (jogo.getNumeroJogadas() == 9)
+				tela.getTxtStatus().setText("Draw");
+		}
+
+		System.out.println("\n" + jogo.getNumeroJogadas());
 	} // END FUNCTION
 
 }
