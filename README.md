@@ -1,3 +1,3 @@
 # Jogo-da-Velha-GUI
-# Java SE v 8
+# Java SE 8
 # Swing Forms 
