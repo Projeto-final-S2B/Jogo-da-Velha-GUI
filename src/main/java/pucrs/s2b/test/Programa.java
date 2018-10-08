@@ -1,7 +1,7 @@
-package br.com.pedrodev.main;
+package main.java.pucrs.s2b.test;
 
-import br.com.pedrodev.jogodavelha.controller.ControllerTelaJogo;
-import br.com.pedrodev.jogodavelha.view.TelaJogo;
+import main.java.pucrs.s2b.test.ControllerTelaJogo;
+import main.java.pucrs.s2b.test.TelaJogo;
 
 public class Programa {
 	public static void main(String[] args) {

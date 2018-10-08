@@ -1,4 +1,4 @@
-package br.com.pedrodev.jogodavelha.controller;
+package main.java.pucrs.s2b.test;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -6,8 +6,8 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
 
-import br.com.pedrodev.jogodavelha.domain.Jogo;
-import br.com.pedrodev.jogodavelha.view.TelaJogo;
+import main.java.pucrs.s2b.test.Jogo;
+import main.java.pucrs.s2b.test.TelaJogo;
 
 @SuppressWarnings("unused")
 public class ControllerTelaJogo implements ActionListener {
@@ -97,7 +97,7 @@ public class ControllerTelaJogo implements ActionListener {
 		tela.getBtn22().setText("");
 	}
 
-	@Override
+	//@Override
 	public void actionPerformed(ActionEvent eventClick) {
 
 		if (eventClick.getSource() == tela.getBtnNewGame()) {
@@ -109,7 +109,7 @@ public class ControllerTelaJogo implements ActionListener {
 		} // END IF
 
 		if (eventClick.getSource() == tela.getBtnAbout()) {
-			JOptionPane.showMessageDialog(tela, "Developer : Pedro Costa\nVersão : 1.0");
+			JOptionPane.showMessageDialog(tela, "Developer : Pedro Costa\nVersï¿½o : 1.0");
 		} // END IF
 
 		if (eventClick.getSource() == tela.getBtnExit()) {

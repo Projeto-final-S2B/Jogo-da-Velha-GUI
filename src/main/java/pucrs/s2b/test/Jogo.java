@@ -1,4 +1,4 @@
-package br.com.pedrodev.jogodavelha.domain;
+package main.java.pucrs.s2b.test;
 
 @SuppressWarnings("unused")
 public class Jogo {
